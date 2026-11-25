@@ -1,16 +1,16 @@
 import streamlit as st
 
-st.set_page_config(page_title="Unicorn Technology", page_icon="🦄")
+st.set_page_config(page_title="Levigate Alloys", page_icon="🦄")
 
-st.title("🦄 Unicorn Technology")
-st.write("Welcome to Unicorn Technology!")
+st.title("🦄 Levigate Alloys")
+st.write("Welcome to Levigate Alloys!")
 
 st.header("About Us")
 st.write("We build smart and simple technology solutions.")
 
 name = st.text_input("Ungal peru enna?")
 if name:
-    st.success(f"Vanakkam {name}! Unicorn Technology ku welcome!")
+    st.success(f"Vanakkam {name}! Levigate Alloys ku welcome!")
 
 st.header("Our Services")
 st.write("✅ Web Development")

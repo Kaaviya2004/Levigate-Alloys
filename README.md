@@ -38,7 +38,7 @@ Levigate Alloys manufactures high-quality metal powders for Automotive, Aerospac
 - Random Forest Classifier & Regressor
 
 ## 📁 Project Structure
-Unicorn-Technology/
+Levigate-Alloys/
 ├── app.py
 ├── train_model.py
 ├── data.py
