@@ -1,8 +1,8 @@
 import streamlit as st
 
-st.set_page_config(page_title="Levigate Alloys", page_icon="🦄")
+st.set_page_config(page_title="Levigate Alloys", page_icon="🏭")
 
-st.title("🦄 Levigate Alloys")
+st.title("🏭 Levigate Alloys")
 st.write("Welcome to Levigate Alloys!")
 
 st.header("About Us")

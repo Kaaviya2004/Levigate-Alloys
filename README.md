@@ -1,4 +1,4 @@
-# 🦄 Levigate Alloys - Metal Powder Manufacturing
+# 🏭 Levigate Alloys - Metal Powder Manufacturing
 
 AI based Supply Chain Management System for Metal Powder Manufacturing Company in India.
 

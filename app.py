@@ -29,7 +29,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, r2_score, mean_absolute_error, mean_squared_error
 
-st.set_page_config(page_title="Levigate Alloys", layout="wide", page_icon="🦄")
+st.set_page_config(page_title="Levigate Alloys", layout="wide", page_icon="🏭")
 
 # Function to set background image for Home Page
 def set_bg_image(image_path):
@@ -46,7 +46,7 @@ df = pd.read_csv('data.csv')
 df = df.dropna()
 df = df.drop_duplicates()
 
-st.sidebar.title("🦄 Levigate Alloys")
+st.sidebar.title("🏭 Levigate Alloys")
 st.sidebar.write("Metal Powder Manufacturing")
 page = st.sidebar.radio("Navigate", ["🏠 Home", "⚠️ Risk Analysis", "📈 Demand Forecasting"])
 st.sidebar.markdown("---")
@@ -63,7 +63,7 @@ else:
 st.markdown(f"<style>.stApp {{ {bg_style} }} [data-testid='stSidebar'] {{ background-color: #0A1931 !important; }} [data-testid='stSidebar'] * {{ color: white !important; }} [data-testid='stSidebar'] div[data-testid='stAlert'] {{ background-color: #1E3A5F !important; border: 1px solid white !important; display: block !important; visibility: visible !important; }} [data-testid='stSidebar'] div[data-testid='stAlert'] * {{ color: white !important; display: block !important; visibility: visible !important; }} div[data-testid='stMetric'] {{ background-color: white; padding: 15px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }}</style>", unsafe_allow_html=True)
 # ================= HOME PAGE =================
 if page == "🏠 Home":
-    st.title("🦄 Levigate Alloys")
+    st.title("🏭 Levigate Alloys")
     st.write("### Leading Manufacturer of High-Quality Metal Powders in India")
     st.write("We manufacture precision metal powders for Automotive, Aerospace, 3D Printing and Additive Manufacturing industries.")
     st.markdown("---")
