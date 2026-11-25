@@ -29,7 +29,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, r2_score, mean_absolute_error, mean_squared_error
 
-st.set_page_config(page_title="Unicorn Technology", layout="wide", page_icon="🦄")
+st.set_page_config(page_title="Levigate Alloys", layout="wide", page_icon="🦄")
 
 # Function to set background image for Home Page
 def set_bg_image(image_path):
@@ -46,7 +46,7 @@ df = pd.read_csv('data.csv')
 df = df.dropna()
 df = df.drop_duplicates()
 
-st.sidebar.title("🦄 Unicorn Technology")
+st.sidebar.title("🦄 Levigate Alloys")
 st.sidebar.write("Metal Powder Manufacturing")
 page = st.sidebar.radio("Navigate", ["🏠 Home", "⚠️ Risk Analysis", "📈 Demand Forecasting"])
 st.sidebar.markdown("---")
@@ -63,7 +63,7 @@ else:
 st.markdown(f"<style>.stApp {{ {bg_style} }} [data-testid='stSidebar'] {{ background-color: #0A1931 !important; }} [data-testid='stSidebar'] * {{ color: white !important; }} [data-testid='stSidebar'] div[data-testid='stAlert'] {{ background-color: #1E3A5F !important; border: 1px solid white !important; display: block !important; visibility: visible !important; }} [data-testid='stSidebar'] div[data-testid='stAlert'] * {{ color: white !important; display: block !important; visibility: visible !important; }} div[data-testid='stMetric'] {{ background-color: white; padding: 15px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }}</style>", unsafe_allow_html=True)
 # ================= HOME PAGE =================
 if page == "🏠 Home":
-    st.title("🦄 Unicorn Technology")
+    st.title("🦄 Levigate Alloys")
     st.write("### Leading Manufacturer of High-Quality Metal Powders in India")
     st.write("We manufacture precision metal powders for Automotive, Aerospace, 3D Printing and Additive Manufacturing industries.")
     st.markdown("---")
@@ -78,7 +78,7 @@ if page == "🏠 Home":
     with col7: st.metric("High Risk %", f"{(df['Risk_Level']=='High Risk').mean()*100:.1f}%")
     with col8: st.metric("Avg Particle Size", f"{df['Particle_Size_Micron'].mean():.1f} Micron")
     st.markdown("---")
-    st.subheader("Why Unicorn Technology?")
+    st.subheader("Why Levigate Alloys?")
     c1, c2, c3 = st.columns(3)
     with c1: st.info("**High Purity**\n\n99.9% purity metal powders with lab tested quality.")
     with c2: st.info("**Custom Particle Size**\n\n15 to 150 Micron - As per customer requirement.")
@@ -196,7 +196,7 @@ elif page == "📈 Demand Forecasting":
     if st.button("Predict Demand", use_container_width=True):
         pred_demand = reg.predict([[price_in, promo_val, season_map[season_in], prev_in, order_in]])[0]
         st.success(f"Predicted Demand: {int(pred_demand)} Kg")
-        st.info(f"Recommendation: Unicorn Technology should manufacture {int(pred_demand)} Kg of {prod}.")
+        st.info(f"Recommendation: Levigate Alloys should manufacture {int(pred_demand)} Kg of {prod}.")
     st.markdown("---")
     st.write("Demand Trend Over Time")
     st.line_chart(df['Demand'].head(100))

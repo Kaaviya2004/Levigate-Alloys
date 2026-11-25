@@ -1,8 +1,8 @@
-# 🦄 Unicorn Technology - Metal Powder Manufacturing
+# 🦄 Levigate Alloys - Metal Powder Manufacturing
 
 AI based Supply Chain Management System for Metal Powder Manufacturing Company in India.
 
-Unicorn Technology manufactures high-quality metal powders for Automotive, Aerospace, 3D Printing and Additive Manufacturing industries. This project helps the company to predict Supplier Risk and Customer Demand using Machine Learning.
+Levigate Alloys manufactures high-quality metal powders for Automotive, Aerospace, 3D Printing and Additive Manufacturing industries. This project helps the company to predict Supplier Risk and Customer Demand using Machine Learning.
 
 ## 📸 Project Overview
 
@@ -84,4 +84,4 @@ python -m streamlit run app.py
 
 ## 👩‍💻 Developed By
 
-Kaaviya - Unicorn Technology Project
+Kaaviya - Levigate Alloys Project
