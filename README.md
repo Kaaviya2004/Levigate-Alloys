@@ -1,5 +1,7 @@
 # 🏭 Levigate Alloys - Metal Powder Manufacturing
 
+🚀 **Live Demo:** [Click here to view Levigate Alloys App](https://levigate-alloys-f5bjz5ukbqqytjyrwle6xt.streamlit.app/)
+
 AI based Supply Chain Management System for Metal Powder Manufacturing Company in India.
 
 Levigate Alloys manufactures high-quality metal powders for Automotive, Aerospace, 3D Printing and Additive Manufacturing industries. This project helps the company to predict Supplier Risk and Customer Demand using Machine Learning.
