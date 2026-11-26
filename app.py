@@ -70,7 +70,7 @@ if page == "🏠 Home":
     col1, col2, col3, col4 = st.columns(4)
     with col1: st.metric("Total Records", f"{len(df):,}")
     with col2: st.metric("Total Columns", f"{len(df.columns)}")
-    with col3: st.metric("Metal Powder Products", f"{df['Product'].nunique()}")
+    with col3: st.metric("Metal Powder Products", f"{df['Product'].nunique()}") 
     with col4: st.metric("Raw Material Suppliers", f"{df['Supplier'].nunique()}")
     col5, col6, col7, col8 = st.columns(4)
     with col5: st.metric("Avg Demand (Kg)", f"{int(df['Demand'].mean()):,}")
@@ -120,7 +120,7 @@ elif page == "⚠️ Risk Analysis":
     with m2: st.metric("Precision", f"{prec*100:.2f}%")
     with m3: st.metric("Recall", f"{rec*100:.2f}%")
     with m4: st.metric("F1-Score", f"{f1*100:.2f}%")
-    st.info("Existing: Logistic Regression (78%) | Proposed: Random Forest Classifier (95%+)")
+    st.info("Existing: Logistic Regression (78%) | Proposed: Random Forest Classifier (90%+)")
     st.subheader("Enter Supplier Details")
     col1, col2 = st.columns(2)
     with col1:
@@ -180,7 +180,7 @@ elif page == "📈 Demand Forecasting":
     with d1: st.metric("R2 Score", f"{r2:.3f} ({r2*100:.1f}%)")
     with d2: st.metric("MAE - Avg Error", f"{mae:.0f} Kg")
     with d3: st.metric("RMSE", f"{rmse:.0f} Kg")
-    st.info("Existing: Linear Regression (R2 0.65) | Proposed: Random Forest Regressor (R2 0.90+)")
+    st.info("Existing: Linear Regression (R2 0.65) | Proposed: Random Forest Regressor (R2 0.95+)")
     st.subheader("Enter Product Details")
     col1, col2 = st.columns(2)
     with col1:
